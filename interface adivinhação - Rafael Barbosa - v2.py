@@ -88,6 +88,8 @@ class Janela(QMainWindow):
                 self.label2.setText('🏆VOCÊ ACERTOU!🏆 toma aqui sua medalha 🏅🤏')
                 self.label3.setText(f"Você ganhou com {self.pontos} pontos 👏👏👏")
                 self.botao.setEnabled(False)
+                self.botao.setStyleSheet(
+            'QPushButton{background-color:#ffa3a3; font-size:15px; color:#fff}')
             else:
                 if chute > num_secreto:
                     self.label2.setText('Seu chute é maior que o número secreto 🛫🛫')
